@@ -1,5 +1,6 @@
 function result() {
     var name = document.getElementById("name").value;
+    var hopes = document.getElementById("hopes").value;
 
     var result = "";
     var wordList = ["楽しくオタク", "アクティブオタク", "両立オタク", "推しのデビュ｜",
@@ -21,7 +22,13 @@ function result() {
 
     var wordSize = wordList.length;
     var j = Math.floor( Math.random() * wordSize );
-    var hope = wordList[j];
+    var hope = "";
+    if(hopes == ""){
+        hope = wordList[j];
+    }else{
+        hope = hopes;
+    }
+    
 
     for(var i = 0;i < hope.length; i++){
         result += "\n┃　" + hope[i] + "　┃";
