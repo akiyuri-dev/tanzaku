@@ -44,7 +44,7 @@ function result() {
         + encodeURIComponent("┏━┷━┓" 
         + result
         + tateName
-        + "\n┗━━━┛\n#ジャニオタ短冊");
+        + "\n┗━━━☆+ﾟ\n#ジャニオタ短冊");
 
     var subTweetURL = tweetURL + "&url=" +  encodeURIComponent(window.location.href);
 
